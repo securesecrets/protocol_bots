@@ -1,7 +1,7 @@
 # Functions that execute code on for the stkd_secret contract
 import utils, time
 
-SECURITY_BOT = "secret1n7ecykm6ujvcsw5va3cd8v8t4nrm3n0jrwq2mw"
+SECURITY_BOT = ""
 
 def unbond_batch():
     client, wallet = utils.bot_init()
