@@ -47,7 +47,7 @@ def save_staking_info():
     cur_time = int(time.time())
     utils.log("stkd_log.csv", "\nCurrent time: " + str(cur_time))
 
-    query_msg = {"staking_info": {"time": time}}
+    query_msg = {"staking_info": {"time": cur_time}}
     query_result = client.wasm.contract_query(SECURITY_BOT, query_msg)
 
     utils.log("stkd_log.csv", "Staking Info: " + str(query_result.to_json()))
